@@ -1,3 +1,228 @@
-h1{
-    color:green;
+*{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(
+        rgb(135, 206, 235), rgb(50, 100, 235)
+    ), center;
+    /* background-image: url("resources/profilePic.jpeg"); */
+    background-repeat: no-repeat;
+    /* min-width:1027px;
+    min-height:1027px; */
+}
+
+.profile-pic{
+    border-radius: 50%;
+    margin-top:30%;
+    margin-left:30%;
+}
+
+/* Navbar */
+.navbar{
+    background:linear-gradient(rgb(50,100,235), rgb(135,206,235));
+}
+    .nav-name{
+        color:green;
+        font-size:40px;
+    }
+
+    #nav-items{
+        margin-left:auto;
+        font-size:40px;
+    }
+
+    .nav-item{
+        margin-left:25px;
+    }
+
+.section-heading{
+    font-weight: bold;
+    text-align:center;
+    margin-top:5%;
+    margin-bottom:20px;
+}
+
+/* About Me */
+#aboutme-heading{
+    margin:95px auto 0px auto;
+    
+}
+#aboutme{
+   margin:0px auto;
+}
+    #aboutme-pic{
+        border-radius:20px;
+
+    }
+    .aboutme-text{
+        text-indent: 1em;
+        /* display:inline-block; */
+    }
+
+/* Projects */
+#projects{
+    margin:0px auto;
+    display:flex;
+    flex-direction: column;
+}
+    .project-container{
+        width:300px;
+        height:300px;
+        margin: 0px auto;
+        border:1px solid black;
+        padding:10px;
+        background:radial-gradient(circle, rgb(135,206,235), rgb(248, 203, 0));
+    }
+    .project-container:hover{
+        background:radial-gradient(circle, rgb(248,203,0),rgb(135,206,235));
+        /* -webkit-transform: rotate(360deg); /* Safari */
+        /* transform: rotate(360deg); */
+    }
+        .project-name{
+            text-align:center;
+            margin-top:25%;
+        }
+        .project-tags{
+            margin:0px auto;
+            display:none;
+            flex-direction:column;
+            justify-content: center;
+        }
+            .project-tag{
+                text-align:center;
+                margin:0px;
+                color:rgb(50,100,235);
+                flex-direction: column;
+            }
+
+/* Resume */
+#resume{
+    margin:0px auto 20px auto;
+}
+    #resume-object{
+        margin:0px auto;
+        width:80%;
+        height:800px;
+    }
+    #resume-text {
+        text-align:center;
+        /* text-indent: 10%; */
+    }
+        #resume-link{
+            color:navy;
+        }
+    #resume-skills{
+        width:80%;
+        margin:0px auto;
+        padding:20px;
+        /* border:1px solid salmon; */
+    }
+    .resume-subheading{
+        
+        color:red;
+    }
+
+/* Responsive Design */
+@media only screen and (max-width: 360px){
+    #aboutme{
+        width:320px;
+    }
+    #projects{
+        width:320px;
+    }
+}
+@media only screen and (max-width: 480px){
+    /* Aboutme */
+    #aboutme{
+        width:420px;
+    }
+        #aboutme-pic{
+            display:block;
+            margin:10px auto 5px auto;
+        }
+        .aboutme-text{
+            margin:0px auto;
+            font-size:16px;
+            padding: 0px 15px;
+        }
+    /* Projects */
+    #projects{
+        width:420px;
+    }
+    /* Resume */
+    #resume{
+        width:400px;
+    }
+        #resume-text{
+            font-size: 22px;
+        }
+
+    /* Contact */
+}
+@media only screen and (min-width:481px){
+    /* Aboutme */
+    #aboutme{
+        padding:15px;
+        overflow: auto;
+        width:100%;
+    }
+        #aboutme-pic{
+            float:left;
+            margin:0px 15px;
+        }
+        .aboutme-text{
+            padding:0px;
+            margin:50px 15px 0px 15px;
+        }
+        .p-break{
+            margin:0px 15px;
+        }
+
+    /* Project */
+    #projects{
+        width:401px;
+        flex-wrap:wrap;
+        flex-direction: row;
+    }
+        .project-container{
+            width:200px;
+            height:200px;
+            display:inline-block;
+            
+        }
+
+    /* Resume */
+    #resume{
+
+    }
+
+    /* Contact */
+    #contact{
+        margin:0px auto 10% auto;
+        text-align:center;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+        .contact-link{
+            color:navy;
+        }
+            .contact-logo{
+                width:50px;
+                height:auto;
+                background-color:transparent;
+            }
+}
+@media only screen and (min-width:1024px){
+    /* Aboutme */
+    #aboutme{
+        width:900px;
+    }
+
+    /*  */
+    #projects{
+        width:900px;
+    }
 }

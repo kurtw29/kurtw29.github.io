@@ -2,15 +2,123 @@
 <html lang='en'>
 <head>
     <meta charset='utf-8'>
-    <title></title>
-<meta name='description' content=''>
+    <title>Kurt Wang</title>
+<meta name='description' content='Kurt Wang Portfolio: Cross-functional Full Stack developer with experience in JavaScript, Java, and Python programming. Expertise in retail sales service, store operations, and economics in a fast-paced work environment. Independent and self-driving with capabilities to transform ideas into scalable real-world web applications, from schema designs and prototyping to product deployment and database maintenance. Recognized for teamwork, work ethic, and dedication to assist colleagues and outstanding customer satisfaction. Bilingual, bi-cultural (English/Mandarin).'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous'>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
 </head>
 <body>
-    <h1 id="hello">Hello World!</h1>
+    <!-- Greeting cover page -->
+    <!-- <img class="profile-pic" src="resources/profilePic.jpeg" alt="profile-pic"/> -->
 
+    <!-- content -->
+    <div id="content">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand nav-name" href="#">Kurt Wang</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav my-2 my-sm-0" id="nav-items">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#aboutme">About Me <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- About me -->
+        <h3 id='aboutme-heading' class='section-heading'>About me</h3>
+        <div id="aboutme">
+            <img id="aboutme-pic" src="resources/profilePic.jpeg" alt="profile-pic"/>
+                <p class="aboutme-text">Hi, I am a full stack developer with experience building apps in JavaScript, Java, and Python. Independent and self-driving, I work to transform ideas into scalable real-world web applications, from schema designs and prototyping to product deployment and database maintenance.</p>
+                <p class="aboutme-text p-break">Before starting a career in software development, I worked in the retail industry and took up responsibilities in various roles: sales/customer services, design consultation, IT/store operations, billing reports, and inventory management.</p>
+                <p class="aboutme-text p-break">I'm currently working on a few independent projects with other developers while looking for the right team to grow and make a difference in the E-commerce community.</p>
+        </div>
+
+        <!-- Projects -->
+        <h3 id="projects-heading" class="section-heading">Projects</h3>
+        <div id="projects">
+            <div id="project-1" class="project-container">
+                <h4 class="project-name"><a href="#">UnitConv</a></h4>
+                <div class="project-tags">
+                    <p class="project-tag">Python/Django</p>
+                    <p class="project-tag">JavaScript/jQuery</p>
+                    <p class="project-tag">Ajax</p>
+                    <p class="project-tag">MySQL</p>
+                </div>
+            </div>
+            <div id="project-2" class="project-container">
+                <h4 class="project-name"><a href="#">Question Generator</a></h4>
+                <div class="project-tags">
+                    <p class="project-tag">JavaScript/Node.js</p>
+                    <p class="project-tag">Angular</p>
+                    <p class="project-tag">MongoDB</p>
+                </div>
+            </div>
+            <!-- Dojo Assignments portfolio -->
+            <!-- <div id="project-python" class="project-container">
+                <h4 class="project-name">Python Stack</h4>
+                <div class="project-tags">
+                    <p class="project-tag">Flask</p>
+                    <p class="project-tag">Django</p>
+                    <p class="project-tag">SQLite & MySQL</p>
+                    <p class="project-tag">HTML/CSS</p>
+                </div>
+            </div>
+            <div id="project-mean" class="project-container">
+                <h4 class="project-name">MEAN Stack</h4>
+                <div class="project-tags">
+                    <p class="project-tag">MongoDB</p>
+                    <p class="project-tag">Express</p>
+                    <p class="project-tag">Angular 6</p>
+                    <p class="project-tag">Node.js</p>
+                    <p class="project-tag">HTML/CSS</p>
+                </div>
+            </div>
+            <div id="project-java" class="project-container">
+                <h4 class="project-name">JAVA Stack</h4>
+                <div class="project-tags">
+                    <p class="project-tag">Servlet/Apache Tomcat</p>
+                    <p class="project-tag">JSP</p>
+                    <p class="project-tag">Spring Boot</p>
+                    <p class="project-tag">Maven</p>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Resume -->
+        <h3 id="resume-heading" class="section-heading">My Resume</h3>
+        <div id="resume">
+            <!-- <object id="resume-object" data="resources/KurtWang_Resume.pdf" type="application/pdf"></object> -->
+            <h3 id="resume-text"><a id="resume-link" href="resources/KurtWang_Resume.pdf" target="_blank" >Open/Download Resume</a></h3>
+            <!-- <div id="resume-skills">
+                <h5 id="skills-heading" class="resume-subheading">Skills</h5>
+                <canvas id="skills-chart" width="70%" height="auto"></canvas>
+            </div> -->
+        </div>
+
+        <!-- Contact -->
+        <h3 id="contact-heading" class="section-heading">Contact</h3>
+        <div id="contact">
+            <a class="contact-link" href="mailto:ckurt37@gmail.com"><img src="resources/gmail-icon.png" class="contact-logo"> ckurt37@gmail.com</a>
+            <a class="contact-link" href="https://github.com/kurtw29"><img src="resources/Octocat.png" class="contact-logo"> github.com/kurtw29</a>
+            <a class="contact-link" href="https://www.linkedin.com/in/kurt-wang/"><img src="resources/In-2C-48px-R.png" class="contact-logo"> linkedin.com/in/kurt-wang</a>
+        </div>
+    </div> <!--#content closing tag-->
     <script src="script.js"></script>
 </body>
 </html>
