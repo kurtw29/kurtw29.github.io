@@ -69,7 +69,9 @@ body{
 }
 #projects-wrapper{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     
     }
     .project-container{
@@ -182,6 +184,12 @@ body{
     #projects{
         width:420px;
     }
+        #projects-wrapper{
+            flex-direction: column;
+        }
+            .project-container{
+                margin-bottom:30px;
+            }
     /* Resume */
     #resume{
         width:400px;
@@ -215,10 +223,9 @@ body{
     #projects{
     }
         .project-container{
-            width:200px;
-            height:200px;
-            display:inline-block;
-            
+            width:300px;
+            height:300px;
+            /* display:inline-block; */
         }
 
     /* Resume */
