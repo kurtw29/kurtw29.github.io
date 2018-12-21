@@ -8,6 +8,7 @@ body{
     ), center;
     /* background-image: url("resources/profilePic.jpeg"); */
     background-repeat: no-repeat;
+    padding-top:90px;
     /* min-width:1027px;
     min-height:1027px; */
 }
@@ -24,32 +25,34 @@ body{
 }
     .nav-name{
         color:green;
-        font-size:40px;
+        font-size:25px;
     }
 
     #nav-items{
         margin-left:auto;
-        font-size:40px;
+        font-size:25px;
     }
 
     .nav-item{
         margin-left:25px;
     }
 
+/* For general section CSS */
 .section-heading{
     font-weight: bold;
     text-align:center;
-    margin-top:5%;
     margin-bottom:20px;
+}
+.content-topic{
+    padding-top:85px;
 }
 
 /* About Me */
-#aboutme-heading{
-    margin:95px auto 0px auto;
-    
-}
 #aboutme{
-   margin:0px auto;
+    margin:0px auto;
+    padding:0px 15px;
+    overflow: auto;
+    width:100%;
 }
     #aboutme-pic{
         border-radius:20px;
@@ -63,9 +66,12 @@ body{
 /* Projects */
 #projects{
     margin:0px auto;
+}
+#projects-wrapper{
     display:flex;
     flex-direction: column;
-}
+    
+    }
     .project-container{
         width:300px;
         height:300px;
@@ -123,19 +129,45 @@ body{
         color:red;
     }
 
+/* Contact */
+#contact{
+    margin:0px auto 10% auto;
+    padding:5%;
+}
+#contact-wrapper{
+    margin:0px auto 10% auto;
+    text-align:center;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+    .contact-link{
+        color:navy;
+    }
+        .contact-logo{
+            width:50px;
+            height:auto;
+            background-color:transparent;
+        }
+
 /* Responsive Design */
-@media only screen and (max-width: 360px){
+
+/* @media only screen and (max-width: 360px){
     #aboutme{
         width:320px;
     }
-    #projects{
+    #projects-wrapper{
         width:320px;
     }
-}
+} */
 @media only screen and (max-width: 480px){
     /* Aboutme */
     #aboutme{
-        width:420px;
+        /* width:420px; */
+        padding:15px;
+        overflow: auto;
+        width:100%;
     }
         #aboutme-pic{
             display:block;
@@ -159,13 +191,13 @@ body{
         }
 
     /* Contact */
+    .contact-link-text{
+        display:none;
+    }
 }
 @media only screen and (min-width:481px){
     /* Aboutme */
     #aboutme{
-        padding:15px;
-        overflow: auto;
-        width:100%;
     }
         #aboutme-pic{
             float:left;
@@ -181,9 +213,6 @@ body{
 
     /* Project */
     #projects{
-        width:401px;
-        flex-wrap:wrap;
-        flex-direction: row;
     }
         .project-container{
             width:200px;
@@ -198,22 +227,7 @@ body{
     }
 
     /* Contact */
-    #contact{
-        margin:0px auto 10% auto;
-        text-align:center;
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        justify-content: space-evenly;
-    }
-        .contact-link{
-            color:navy;
-        }
-            .contact-logo{
-                width:50px;
-                height:auto;
-                background-color:transparent;
-            }
+
 }
 @media only screen and (min-width:1024px){
     /* Aboutme */

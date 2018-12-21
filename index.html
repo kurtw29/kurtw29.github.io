@@ -41,8 +41,8 @@
             </div>
         </nav>
         <!-- About me -->
-        <h3 id='aboutme-heading' class='section-heading'>About me</h3>
-        <div id="aboutme">
+        <div id="aboutme" class="content-topic">
+            <h3 id='aboutme-heading' class='section-heading'>About me</h3>
             <img id="aboutme-pic" src="resources/profilePic.jpeg" alt="profile-pic"/>
                 <p class="aboutme-text">Hi, I am a full stack developer with experience building apps in JavaScript, Java, and Python. Independent and self-driving, I work to transform ideas into scalable real-world web applications, from schema designs and prototyping to product deployment and database maintenance.</p>
                 <p class="aboutme-text p-break">Before starting a career in software development, I worked in the retail industry and took up responsibilities in various roles: sales/customer services, design consultation, IT/store operations, billing reports, and inventory management.</p>
@@ -50,59 +50,61 @@
         </div>
 
         <!-- Projects -->
-        <h3 id="projects-heading" class="section-heading">Projects</h3>
-        <div id="projects">
-            <div id="project-1" class="project-container">
-                <h4 class="project-name"><a href="#">UnitConv</a></h4>
-                <div class="project-tags">
-                    <p class="project-tag">Python/Django</p>
-                    <p class="project-tag">JavaScript/jQuery</p>
-                    <p class="project-tag">Ajax</p>
-                    <p class="project-tag">MySQL</p>
+        <div id="projects" class="content-topic">
+            <h3 id="projects-heading" class="section-heading">Projects</h3>
+            <div id="projects-wrapper">
+                <div id="project-1" class="project-container">
+                    <h4 class="project-name"><a href="#projects">UnitConv</a></h4>
+                    <div class="project-tags">
+                        <p class="project-tag">Python/Django</p>
+                        <p class="project-tag">JavaScript/jQuery</p>
+                        <p class="project-tag">Ajax</p>
+                        <p class="project-tag">MySQL</p>
+                    </div>
                 </div>
-            </div>
-            <div id="project-2" class="project-container">
-                <h4 class="project-name"><a href="#">Question Generator</a></h4>
-                <div class="project-tags">
-                    <p class="project-tag">JavaScript/Node.js</p>
-                    <p class="project-tag">Angular</p>
-                    <p class="project-tag">MongoDB</p>
+                <div id="project-2" class="project-container">
+                    <h4 class="project-name"><a href="#projects">Question Generator</a></h4>
+                    <div class="project-tags">
+                        <p class="project-tag">JavaScript/Node.js</p>
+                        <p class="project-tag">Angular</p>
+                        <p class="project-tag">MongoDB</p>
+                    </div>
                 </div>
-            </div>
-            <!-- Dojo Assignments portfolio -->
-            <!-- <div id="project-python" class="project-container">
-                <h4 class="project-name">Python Stack</h4>
-                <div class="project-tags">
-                    <p class="project-tag">Flask</p>
-                    <p class="project-tag">Django</p>
-                    <p class="project-tag">SQLite & MySQL</p>
-                    <p class="project-tag">HTML/CSS</p>
+                <!-- Dojo Assignments portfolio -->
+                <!-- <div id="project-python" class="project-container">
+                    <h4 class="project-name">Python Stack</h4>
+                    <div class="project-tags">
+                        <p class="project-tag">Flask</p>
+                        <p class="project-tag">Django</p>
+                        <p class="project-tag">SQLite & MySQL</p>
+                        <p class="project-tag">HTML/CSS</p>
+                    </div>
                 </div>
-            </div>
-            <div id="project-mean" class="project-container">
-                <h4 class="project-name">MEAN Stack</h4>
-                <div class="project-tags">
-                    <p class="project-tag">MongoDB</p>
-                    <p class="project-tag">Express</p>
-                    <p class="project-tag">Angular 6</p>
-                    <p class="project-tag">Node.js</p>
-                    <p class="project-tag">HTML/CSS</p>
+                <div id="project-mean" class="project-container">
+                    <h4 class="project-name">MEAN Stack</h4>
+                    <div class="project-tags">
+                        <p class="project-tag">MongoDB</p>
+                        <p class="project-tag">Express</p>
+                        <p class="project-tag">Angular 6</p>
+                        <p class="project-tag">Node.js</p>
+                        <p class="project-tag">HTML/CSS</p>
+                    </div>
                 </div>
-            </div>
-            <div id="project-java" class="project-container">
-                <h4 class="project-name">JAVA Stack</h4>
-                <div class="project-tags">
-                    <p class="project-tag">Servlet/Apache Tomcat</p>
-                    <p class="project-tag">JSP</p>
-                    <p class="project-tag">Spring Boot</p>
-                    <p class="project-tag">Maven</p>
-                </div>
-            </div> -->
-        </div>
+                <div id="project-java" class="project-container">
+                    <h4 class="project-name">JAVA Stack</h4>
+                    <div class="project-tags">
+                        <p class="project-tag">Servlet/Apache Tomcat</p>
+                        <p class="project-tag">JSP</p>
+                        <p class="project-tag">Spring Boot</p>
+                        <p class="project-tag">Maven</p>
+                    </div>
+                </div> -->
+            </div> <!--closing #project-wrapper -->
+        </div> <!-- closing #projects -->
 
         <!-- Resume -->
-        <h3 id="resume-heading" class="section-heading">My Resume</h3>
-        <div id="resume">
+        <div id="resume" class="content-topic">
+            <h3 id="resume-heading" class="section-heading">My Resume</h3>
             <!-- <object id="resume-object" data="resources/KurtWang_Resume.pdf" type="application/pdf"></object> -->
             <h3 id="resume-text"><a id="resume-link" href="resources/KurtWang_Resume.pdf" target="_blank" >Open/Download Resume</a></h3>
             <!-- <div id="resume-skills">
@@ -112,11 +114,13 @@
         </div>
 
         <!-- Contact -->
-        <h3 id="contact-heading" class="section-heading">Contact</h3>
-        <div id="contact">
-            <a class="contact-link" href="mailto:ckurt37@gmail.com"><img src="resources/gmail-icon.png" class="contact-logo"> ckurt37@gmail.com</a>
-            <a class="contact-link" href="https://github.com/kurtw29"><img src="resources/Octocat.png" class="contact-logo"> github.com/kurtw29</a>
-            <a class="contact-link" href="https://www.linkedin.com/in/kurt-wang/"><img src="resources/In-2C-48px-R.png" class="contact-logo"> linkedin.com/in/kurt-wang</a>
+        <div id="contact" class="content-topic">
+            <h3 id="contact-heading" class="section-heading">Contact</h3>
+            <div id="contact-wrapper">
+                <a class="contact-link" href="mailto:ckurt37@gmail.com"><img src="resources/gmail-icon.png" class="contact-logo"> <span class="contact-link-text">ckurt37@gmail.com</span></a>
+                <a class="contact-link" href="https://github.com/kurtw29"><img src="resources/Octocat.png" class="contact-logo"><span class="contact-link-text"> github.com/kurtw29</span></a>
+                <a class="contact-link" href="https://www.linkedin.com/in/kurt-wang/"><img src="resources/In-2C-48px-R.png" class="contact-logo"> <span class="contact-link-text">linkedin.com/in/kurt-wang</span></a>
+            </div>
         </div>
     </div> <!--#content closing tag-->
     <script src="script.js"></script>

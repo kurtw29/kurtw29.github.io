@@ -1,3 +1,10 @@
+// Navbar
+$(".nav-item").on('click', function(){
+    $('.navbar-toggler').click();
+})
+
+
+// Project
 $(".project-container").hover(
     function(){
         $(this).children(".project-name").css("margin-top", "5%");
