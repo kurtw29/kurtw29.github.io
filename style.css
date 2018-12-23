@@ -75,33 +75,32 @@ body{
     
     }
     .project-container{
-        width:300px;
-        height:300px;
-        margin: 0px auto;
-        border:1px solid black;
+        border:2px solid yellowgreen;
         padding:10px;
-        background:radial-gradient(circle, rgb(135,206,235), rgb(248, 203, 0));
+        /* background:radial-gradient(circle, rgb(135,206,235), rgb(248, 203, 0)); */
     }
-    .project-container:hover{
+    /* .project-container:hover{
         background:radial-gradient(circle, rgb(248,203,0),rgb(135,206,235));
-        /* -webkit-transform: rotate(360deg); /* Safari */
-        /* transform: rotate(360deg); */
-    }
+    } */
+        .project-pic{
+            display:block;
+            width:270px;
+            margin: 0px auto;
+            object-fit:contain;
+        }
         .project-name{
             text-align:center;
-            margin-top:25%;
         }
         .project-tags{
             margin:0px auto;
-            display:none;
-            flex-direction:column;
-            justify-content: center;
+            /* display:flex;
+            flex-direction:row;
+            flex-wrap:wrap; */
         }
             .project-tag{
-                text-align:center;
-                margin:0px;
+                /* text-align:center; */
+                margin-right:5px;
                 color:rgb(50,100,235);
-                flex-direction: column;
             }
 
 /* Resume */

@@ -7,12 +7,14 @@ $(".nav-item").on('click', function(){
 // Project
 $(".project-container").hover(
     function(){
-        $(this).children(".project-name").css("margin-top", "5%");
-        $(this).children(".project-tags").css("display", "flex");
+        // $(this).children(".project-name").css("display", "block");
+        // $(this).children(".project-name").css("margin-top", "5%");
+        // $(this).children(".project-tags").css("display", "flex");
     },
     function(){
-        $(this).children(".project-name").css("margin-top", "25%");
-        $(this).children(".project-tags").css("display", "none");
+        // $(this).children(".project-name").css("display", "none");
+        // $(this).children(".project-name").css("margin-top", "25%");
+        // $(this).children(".project-tags").css("display", "none");
     }
 )
 
