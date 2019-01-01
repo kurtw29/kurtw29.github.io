@@ -5,16 +5,20 @@ $(".nav-item").on('click', function(){
 
 
 // Project
-$(".project-container").hover(
+$("#project-1").hover(
     function(){
-        // $(this).children(".project-name").css("display", "block");
-        // $(this).children(".project-name").css("margin-top", "5%");
-        // $(this).children(".project-tags").css("display", "flex");
+        $("#project-1-pic").attr("src", "resources/media/project-1/unitConv.gif");
     },
     function(){
-        // $(this).children(".project-name").css("display", "none");
-        // $(this).children(".project-name").css("margin-top", "25%");
-        // $(this).children(".project-tags").css("display", "none");
+        $("#project-1-pic").attr("src", "resources/media/project-1/unitConvCover.png");
+    }
+)
+$("#project-2").hover(
+    function(){
+        $("#project-2-pic").attr("src", "resources/media/project-2/demoQuestionsApp.gif");
+    },
+    function(){
+        $("#project-2-pic").attr("src", "resources/media/project-2/QuestionsAppPic.png");
     }
 )
 

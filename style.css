@@ -50,7 +50,7 @@ body{
 /* About Me */
 #aboutme{
     margin:0px auto;
-    padding:0px 15px;
+    /* padding:0px 15px; */
     overflow: auto;
     width:100%;
 }
@@ -77,31 +77,38 @@ body{
     .project-container{
         border:2px solid yellowgreen;
         padding:10px;
-        /* background:radial-gradient(circle, rgb(135,206,235), rgb(248, 203, 0)); */
     }
-    /* .project-container:hover{
-        background:radial-gradient(circle, rgb(248,203,0),rgb(135,206,235));
-    } */
         .project-pic{
             display:block;
             width:270px;
-            margin: 0px auto;
+            margin: 20px auto;
             object-fit:contain;
         }
         .project-name{
             text-align:center;
         }
+            .project-name > a{
+                color:navy;
+            }
         .project-tags{
-            margin:0px auto;
+            margin:10px auto;
+            text-align:center;
+            color:orangered;
             /* display:flex;
             flex-direction:row;
             flex-wrap:wrap; */
         }
             .project-tag{
-                /* text-align:center; */
-                margin-right:5px;
-                color:rgb(50,100,235);
+                background-color:rgb(248, 248, 152);
+                border-radius:10px;
+                padding:3px 5px;
+                margin:5px;
+                line-height:30px;
             }
+        .project-description{
+            text-indent: 30px;
+            text-justify: auto;
+        }
 
 /* Resume */
 #resume{
@@ -223,8 +230,6 @@ body{
     }
         .project-container{
             width:300px;
-            height:300px;
-            /* display:inline-block; */
         }
 
     /* Resume */
@@ -234,6 +239,12 @@ body{
 
     /* Contact */
 
+}
+@media only screen and (max-width:750px){
+    /* Contact */
+    .contact-link-text{
+        display:none;
+    }
 }
 @media only screen and (min-width:1024px){
     /* Aboutme */
