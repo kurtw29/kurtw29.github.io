@@ -21,7 +21,7 @@ body{
 
 /* Navbar */
 .navbar{
-    background:linear-gradient(rgb(50,100,235), rgb(135,206,235));
+    background:linear-gradient(rgb(50, 235, 106), rgb(143, 235, 135));
 }
     .nav-name{
         color:green;
