@@ -1,6 +1,9 @@
 // Navbar
 $(".nav-item").on('click', function(){
-    $('.navbar-toggler').click();
+    var x = window.matchMedia("(max-width: 991px)");
+    if(x.matches){
+        $('.navbar-toggler').click();
+    }
 })
 
 
